@@ -3,31 +3,31 @@ http://clang.llvm.org/get_started.html
 clang -S -emit-llvm <input.c>
 clang <input.ll>
 
+git add . ; git commit -m "" ; git push
+
 What is the simplest program that I can write?
 
 
 ---------------------------------------------------------------------------------------------
 
+Stages
 
-To output a .ll file which is the LLVM IR 'assembly' code that I want to produce with the language.
+    preprocessor -> compiler -> assembler -> linker -> executable file
 
-    clang -S -emit-llvm <input.c>
+Stage Flags
 
-Then run clang <input.ll> to link it and produce an executable file.
+    -E -S -c (none)    
+    -E go up to preprocessor step, -S assembly step, -c compilation step, (none) or all steps.
 
+    -emit-llvm      emit llvm instead of x86 code
 
-Best Guess at how it works.
+Preprocessor note
 
-preprocessor -> compiler -> assembler -> linker -> executable file
+    To avoid constant name collisions put all constants in one file or use #undef to control the scope of the preprocessor
 
--E -S -c (none)    
-These flags stand for - go up to preprocessor step, assembly step, compilation step, or all steps respectively
--emit-llvm      emit llvm instead of x86 code
-
-To avoid constant name collisions put all constants in one file or use #undef to control the scope of the preprocessor
-#define FOO 4
-x = FOO;        → x = 4;
-#undef FOO
+    #define FOO 4
+    x = FOO;        → x = 4;
+    #undef FOO
 
 
 ---------------------------------------------------------------------------------------------
