@@ -1,7 +1,0 @@
-cat $0
-clang a.c -S -emit-llvm -O1
-clang a.c -O1
-./a.out $@
-echo $?
-rm a.out
-

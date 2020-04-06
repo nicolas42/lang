@@ -1,8 +1,0 @@
-cat $0
-# push(){ git add . ; git commit -m $1 ; git push; }
-clang a.c -S -emit-llvm
-clang a.c;
-./a.out $@
-echo $?
-rm a.out
-
