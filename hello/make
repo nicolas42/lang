@@ -1,7 +1,0 @@
-cat $0
-clang a.c -S -emit-llvm
-clang a.c;
-./a.out $@
-echo $?
-rm $(ls | grep -vE '.c|make')
-
