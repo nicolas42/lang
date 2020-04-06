@@ -1,9 +1,9 @@
+push(){ git add . ; git commit -m $1 ; git push }
+
 http://clang.llvm.org/get_started.html
 
 clang -S -emit-llvm <input.c>
 clang <input.ll>
-
-git add . ; git commit -m "" ; git push
 
 What is the simplest program that I can write?
 
