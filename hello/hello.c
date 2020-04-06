@@ -8,6 +8,7 @@
 int main(void){
 
 	printf("Hello World!");
+	printf("You say hello and I say goodbye!");
 
 	// int a = factorial(3);
 	// printf("factorial(3) >> %d\n", a);
