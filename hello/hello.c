@@ -11,7 +11,7 @@
 int main(void){
 
 	printf("Hello World!");
-	printf("You say hello and I say goodbye!");
+	// printf("You say hello and I say goodbye!");
 
     // int a,b,c;
     // c = a + b;

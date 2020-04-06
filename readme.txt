@@ -8,6 +8,17 @@ git add . ; git commit -m "" ; git push
 What is the simplest program that I can write?
 
 
+\0 seems to be the escape character for llvm so
+\00 is the null byte with \0 being the escape character and 0 being the
+actual value which should go into the string.  In this case the char 
+integer zero.
+
+
+Perhaps writing it in rebol first would be a good idea.
+then possibly in javascript.
+then in c
+
+
 ---------------------------------------------------------------------------------------------
 
 Stages
