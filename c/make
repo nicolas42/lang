@@ -1,7 +1,0 @@
-cat $0
-clang hello.c -S -emit-llvm
-clang hello.ll -S
-clang hello.S
-./a.out
-rm a.out
-

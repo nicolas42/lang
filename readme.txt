@@ -1,7 +1,5 @@
 push(){ git add . ; git commit -m $1 ; git push }
 
-http://clang.llvm.org/get_started.html
-
 clang -S -emit-llvm <input.c>
 clang <input.ll>
 
@@ -53,6 +51,8 @@ Preprocessor note
 
     LLVM language reference https://llvm.org/docs/LangRef.html
     kaleidoscope tutorial LLVM IR https://llvm.org/docs/tutorial/
+
+    getting started http://clang.llvm.org/get_started.html
 
 
 ---------------------------------------------------------------------------------------------

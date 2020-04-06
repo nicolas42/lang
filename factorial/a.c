@@ -5,7 +5,7 @@ int factorial(int a){
 	return a * factorial(a-1);
 }
 
-int main(int argc, char** argv){
-	return factorial(argc);
+int main(void){
+	return factorial(3);
 }
 
